@@ -1,6 +1,5 @@
 package dev.mehmet.movies;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,7 @@ public class MovieService {
     private MovieRepository movieRepository;
 
     public List<Movie> allMovies() {
-        System.out.println(movieRepository.findAll().toString());
+//        System.out.println(movieRepository.findAll().toString());
     return movieRepository.findAll();
     }
 
